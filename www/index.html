@@ -14,6 +14,8 @@
         <link rel="stylesheet" href="components/loader.css" />
         <link rel="stylesheet" href="css/style.css" />
         <script>
+            var a = 0;
+            var txt ="";
             $(function() {
                 $("#btn").click(function(e) {
                     main();
@@ -25,6 +27,15 @@
                 $("#disp1").css("font-size", "x-Large")
                 $("#disp1").css("font-family", "fantasy")
                 $("#disp1").css("background", "lightgray")
+
+                txt += "a: " + a + "<br>";
+                if(a = 1){
+                    txt += "TRUE<br>"
+                }else{
+                    txt += "FALSE<br>"
+                }
+                txt += "a: " + a + "<br>";
+                $("#disp2").html(txt);
             }
         </script>
     </head>
